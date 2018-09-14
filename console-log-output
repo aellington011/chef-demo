@@ -1,0 +1,43 @@
+PS C:\Users\Ellington\chef\chef-repo\cookbooks\mynginx> ls
+
+
+    Directory: C:\Users\Ellington\chef\chef-repo\cookbooks\mynginx
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        9/13/2018   7:46 PM                .kitchen
+d-----        9/13/2018   8:44 PM                attributes
+d-----        9/13/2018   5:12 AM                files
+d-----        9/13/2018   9:02 PM                recipes
+d-----        9/13/2018   8:59 PM                templates
+-a----        9/13/2018   7:46 PM            508 .kitchen.yml
+-a----        9/13/2018   5:12 AM             77 Berksfile
+-a----        9/13/2018   6:02 AM             86 Berksfile.lock
+-a----        9/13/2018   5:12 AM           1133 chefignore
+-a----        9/13/2018   5:12 AM             70 LICENSE
+-a----        9/13/2018   5:12 AM            757 metadata.rb
+-a----        9/13/2018   5:12 AM             55 README.md
+
+
+PS C:\Users\Ellington\chef\chef-repo\cookbooks\mynginx> vim .\metadata.rb
+PS C:\Users\Ellington\chef\chef-repo\cookbooks\mynginx> cd .\attributes\
+PS C:\Users\Ellington\chef\chef-repo\cookbooks\mynginx\attributes> ls
+
+
+    Directory: C:\Users\Ellington\chef\chef-repo\cookbooks\mynginx\attributes
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+------        9/13/2018   8:44 PM            101 default.rb
+
+
+PS C:\Users\Ellington\chef\chef-repo\cookbooks\mynginx\attributes> vim .\default.rb
+PS C:\Users\Ellington\chef\chef-repo\cookbooks\mynginx\attributes> cd ..
+PS C:\Users\Ellington\chef\chef-repo\cookbooks\mynginx> knife cookbook upload mynginx
+Uploading mynginx        [0.2.0]
+
+Uploaded 1 cookbook.
+
+PS C:\Users\Ellington\chef\chef-repo\cookbooks\mynginx>
