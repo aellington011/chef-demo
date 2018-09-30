@@ -1,0 +1,19 @@
+{
+  "name": "tomcat-role",
+  "description": "Role for Tomcat Web Application",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+    "chef_client": {
+      "interval": 300,
+      "splay": 60
+    }
+  },
+  "override_attributes": {
+  },
+  "chef_type": "role",
+  "run_list": ["recipe[chef-client::default]",
+	       "recipe[chef-client::delete_validation]"
+  ],
+  "env_run_lists": {												
+  }
+}

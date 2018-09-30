@@ -1,7 +1,0 @@
-DEPENDENCIES
-  mynginx
-    path: .
-    metadata: true
-
-GRAPH
-  mynginx (0.1.0)
