@@ -7,8 +7,9 @@
   "override_attributes": {
   },
   "chef_type": "role",
-  "run_list": ["recipe[chef-client::default]",
-	       "recipe[chef-client::delete_validation]"
+  "run_list": [
+    "role[base]",
+    "recipe[tomcat]"
   ],
   "env_run_lists": {
     "production": [],

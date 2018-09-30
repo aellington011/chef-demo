@@ -27,7 +27,7 @@ default['chef_client']['config'] = {
   'chef_server_url' => Chef::Config[:chef_server_url],
   'validation_client_name' => Chef::Config[:validation_client_name],
   'node_name' => Chef::Config[:node_name],
-  'verify_api_cert' => true,
+  'verify_api_cert' => false,
 }
 
 # should the client fork on runs
