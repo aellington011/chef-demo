@@ -1,6 +1,6 @@
 {
-  "name": "base",
-  "description": "Base configuration for all servers.",
+  "name": "haproxy",
+  "description": "Role for HAProxy Load Balancer",
   "json_class": "Chef::Role",
   "default_attributes": {
   },
@@ -8,8 +8,9 @@
   },
   "chef_type": "role",
   "run_list": [
-    "recipe[chef-client::default]"
+    "role[base]",
+    "recipe[haproxy]"
   ],
-  "env_run_lists": {
+  "env_run_lists": {												
   }
 }

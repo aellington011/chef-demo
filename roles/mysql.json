@@ -1,6 +1,6 @@
 {
-  "name": "base",
-  "description": "Base configuration for all servers.",
+  "name": "mysql",
+  "description": "Role for MySQL Database",
   "json_class": "Chef::Role",
   "default_attributes": {
   },
@@ -8,7 +8,7 @@
   },
   "chef_type": "role",
   "run_list": [
-    "recipe[chef-client::default]"
+    "role[base]"
   ],
   "env_run_lists": {
   }
